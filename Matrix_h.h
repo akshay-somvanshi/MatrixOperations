@@ -1,4 +1,3 @@
-// Step 1: RENAME THE _ADV_PROG_MATRIX_H_ Label To _ADV_PROG_MATRIX_%Your CID Nr%_H_. So, if your CID is 00112233, then the label should be named: _ADV_PROG_MATRIX_00112233_H_
 #ifndef _ADV_PROG_MATRIX_02508971_H_
 #define _ADV_PROG_MATRIX_02508971_H_
 
@@ -7,7 +6,6 @@
 
 namespace adv_prog_cw 
 {
-	// Step 2: RENAME THE MATRIX CLASS To Matrix_%Your CID Nr%. So, if your CID is 00112233, then the class should be named: Matrix_00112233
 	template<typename fT>
 	class Matrix_02508971 {
 	public:
@@ -34,16 +32,13 @@ namespace adv_prog_cw
 		void Transposed(Matrix_02508971& RES) const;
 		void Out(long digits = 5L) const;
 
-		// Step 3: Implement the following methods. These will be tested for speed and accuracy for matrices of increasing size and complexity.
-		
-		// Step 3.1: Multiplication of the matrix by a scalar
 		Matrix_02508971& operator*=(fT scalar);
-		// Step 3.2:  Division of the matrix by a scalar
+
 		Matrix_02508971& operator/=(fT scalar);
-		// Step 3.3:  A method to compute the determinant of square matrices
+		
 		void LUdecomposition() const;
 		fT Determinant() const;
-		// Step 3.4:  A method to compute the inverse of the matrix
+		
 		bool Inverse(Matrix_02508971& result) const;
 
 	private:
